@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SVLS - Solicitud de cambio de descanso</title>
+  <link rel="shortcut icon" href="apple-touch-icon-57x57.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Solicitud de cambio de día de descanso</h2>
+  <form id="solicitudForm">
+    <label>Nombre:
+      <input type="text" name="nombre" required>
+    </label>
+    <label>ID del empleado:
+      <input type="text" name="empleado_id" required>
+    </label>
+    <label>Fecha de solicitud:
+      <input type="date" name="fecha_solicitud" required>
+    </label>
+    <label>Fecha actual de descanso:
+      <input type="date" name="fecha_actual_descanso" required>
+    </label>
+    <label>Fecha solicitada de descanso:
+      <input type="date" name="fecha_solicitada_descanso" required>
+    </label>
+    <label>Motivo:
+      <textarea name="motivo" rows="4" required></textarea>
+    </label>
+    <button type="submit">Enviar solicitud</button>
+  </form>
+  <p style="text-align:center; margin-top:2rem;">
+    <a href="solicitudes.html">Ver solicitudes enviadas</a>
+  </p>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

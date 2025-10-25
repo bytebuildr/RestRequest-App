@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="apple-touch-icon-57x57.png" type="image/png">
+  <title>SVLS - Solicitudes enviadas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Solicitudes de cambio de descanso</h2>
+  <form id="filtroForm">
+  <label>Filtrar por empleado:
+    <input type="text" name="empleado_id" placeholder="ID del empleado">
+  </label>
+  <label>Desde:
+    <input type="date" name="desde">
+  </label>
+  <label>Hasta:
+    <input type="date" name="hasta">
+  </label>
+  <button type="submit">Filtrar</button>
+</form>
+  <table id="tablaSolicitudes">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Empleado</th>
+        <th>Fecha solicitud</th>
+        <th>Fecha actual</th>
+        <th>Fecha solicitada</th>
+        <th>Motivo</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="solicitudes.js"></script>
+</body>
+</html>
